@@ -1,0 +1,15 @@
+/* ============================  modal.css  ============================ */
+
+/* Когда модалка открыта, блокируем скролл страницы */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Бонус: плавный fade-in / fade-out для оверлея */
+#overlay {
+  transition: opacity .2s ease;
+}
+#overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}

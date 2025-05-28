@@ -1,0 +1,33 @@
+.faq-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #f8fafc;
+}
+.faq-question:hover {
+  background-color: #f1f5f9;
+}
+.faq-answer {
+  padding: 1rem;
+  display: none;
+  background-color: white;
+  color: #374151;
+  line-height: 1.6;
+}
+.faq-item.open .faq-answer {
+  display: block;
+}
+.faq-toggle {
+  transition: transform 0.3s ease;
+}
+.faq-item.open .faq-toggle {
+  transform: rotate(45deg);
+}
