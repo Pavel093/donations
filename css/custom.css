@@ -461,11 +461,12 @@ body{
 
 header.main-header{
 	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	border-bottom: 1px solid var(--dark-divider-color);
+	left: 15px;
+	top: 15px;
+	width: calc(100% - 30px);
+	border: 1px solid var(--dark-divider-color);
 	z-index: 100;
+	border-radius: 25px;
 }
 
 header.main-header .header-sticky{

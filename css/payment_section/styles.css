@@ -1,33 +1,64 @@
-.faq-item {
-  border: 1px solid #e2e8f0;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  transition: all 0.3s ease;
+#btnConnect{
+  position: relative;
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  background: linear-gradient(90deg, #1077C0, #FF0066, #FF6D00);
 }
-.faq-question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  cursor: pointer;
-  background-color: #f8fafc;
+
+#btnConnect .chain-svg{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
 }
-.faq-question:hover {
-  background-color: #f1f5f9;
+
+#btnConnect .metamask-svg{
+  position: absolute;
+  left: 10px;
+  top: 9px;
+  bottom: 10px;
 }
-.faq-answer {
-  padding: 1rem;
+
+#btnConnect .trustwallet{
+  position: absolute;
+  left: 45px;
+  top: 9px;
+  bottom: 10px;
+}
+
+#btnConnect:hover .chain-svg {
+  transform: scale(1.1); 
+  transition: transform 0.2s ease;
+}
+
+#btnConnect:disabled{
+  width: 59%;
+  background: #EBECED;
+  color: #353535;
+}
+
+.referral-link{
+  margin-top: 15px;
+  background: linear-gradient(90deg, #1077C0, #FF0066, #FF6D00);
+}
+
+#btnDisconnect{
+  width: 40%;
+  position: relative;
+  color: white;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#btnDisconnect.hidden{
   display: none;
-  background-color: white;
-  color: #374151;
-  line-height: 1.6;
-}
-.faq-item.open .faq-answer {
-  display: block;
-}
-.faq-toggle {
-  transition: transform 0.3s ease;
-}
-.faq-item.open .faq-toggle {
-  transform: rotate(45deg);
+  width: auto;
 }
